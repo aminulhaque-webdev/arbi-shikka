@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="bn" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>নূরানী পদ্ধতিতে কুরআন শিক্ষা</title>
+<meta name="description" content="নূরানী পদ্ধতিতে আরবী হরফ, মাখরাজ, মদ্দ, তাজবীদ ও সিফাত শেখার বাংলা ওয়েবসাইট।">
+<link rel="icon" href="images/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@400;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#home"><span class="brand-ar" lang="ar">ن</span><span>নূরানী কুরআন শিক্ষা</span></a>
+  <button class="menu-btn" aria-label="মেনু" aria-expanded="false">☰</button>
+  <nav id="nav">
+    <a href="#huruf">আরবী হরফ</a><a href="#makhraj">মাখরাজ</a><a href="#madd">মদ্দ</a>
+    <a href="#tajweed">তাজবীদ</a><a href="#sifat">সিফাত</a><a href="#surah">সূরা</a><a href="#hadith">হাদীস</a><a href="#names">আসমাউল হুসনা</a><a href="#book">বইয়ের পাতা</a>
+    <button class="theme-btn" aria-label="থিম পরিবর্তন">◐</button>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="kicker">নূরানী পদ্ধতিতে কুরআন শিক্ষা</p>
+    <h1>হরফ চিনে, <br>শুদ্ধ তিলাওয়াতের পথে</h1>
+    <p class="lead">২৯টি আরবী হরফ থেকে শুরু করে মাখরাজ, মদ্দ, তাজবীদ ও সিফাত—ধাপে ধাপে সহজ বাংলায়।</p>
+    <div class="cta"><a class="btn primary" href="#huruf">হরফ শিখুন</a><a class="btn" href="#book">বইয়ের পাতা দেখুন</a></div>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <span lang="ar" class="big">ا ب ت</span>
+    <span lang="ar" class="mid">بِسْمِ ٱللَّهِ</span>
+  </div>
+</section>
+
+<section id="huruf" class="sec">
+  <h2>আরবী হরফ ২৯টি</h2>
+  <p class="sub">লেখার সুবিধার জন্য ২৯ হরফকে ৮ ভাগে ভাগ করা হয়েছে। হরফে ক্লিক করলে বড় করে দেখা যাবে।</p>
+  <div id="groups" class="groups"></div>
+  <div class="method">
+    <h3>পাঁচ প্রণালীতে শিক্ষা</h3>
+    <ol>
+      <li><b>প্রথম:</b> নুকতা ছাড়া ১৪ হরফ—নামের মাশক ১০০ বার, লেখাপড়া কমপক্ষে এক ঘণ্টা।</li>
+      <li><b>দ্বিতীয়:</b> নুকতাওয়ালা ৬ হরফ—নামের মাশক ১০০ বার, নুকতার মাশক ২০ বার।</li>
+      <li><b>তৃতীয়:</b> <span lang="ar" class="ar-inline">ب ف ن ق ي</span>—তিন প্রকারে শিক্ষা।</li>
+      <li><b>চতুর্থ:</b> <span lang="ar" class="ar-inline">ث ت</span>—চার প্রকারে শিক্ষা।</li>
+      <li><b>পঞ্চম:</b> <span lang="ar" class="ar-inline">خ ح</span>—চার প্রকারে শিক্ষা।</li>
+    </ol>
+  </div>
+</section>
+
+<section id="makhraj" class="sec alt">
+  <h2>মাখরাজ</h2>
+  <p class="sub">উচ্চারণের স্থানকে মাখরাজ বলে। আরবী হরফ ২৯টি, মাখরাজ ১৭টি।</p>
+  <div id="makhrajList" class="mk"></div>
+</section>
+
+<section id="madd" class="sec">
+  <h2>মদ্দের বিবরণ</h2>
+  <p class="sub">মদ্দের হরফ তিনটি, লীনের হরফ দুইটি। মদ্দ মোট ১০ প্রকার।</p>
+  <div class="tabs" role="tablist">
+    <button class="tab on" data-t="t1">এক আলিফ</button>
+    <button class="tab" data-t="t3">তিন আলিফ</button>
+    <button class="tab" data-t="t4">চার আলিফ</button>
+  </div>
+  <div class="panel on" id="t1"><ul>
+    <li>মদ্দে ত্ববায়ী</li><li>মদ্দে বদল (হামযার হরকতকে এক আলিফ টানা)</li><li>মদ্দে লীন (ওয়াক্‌ফে এক আলিফ টানা)</li></ul></div>
+  <div class="panel" id="t3"><ul><li>মদ্দে আ'রযী</li><li>মদ্দে মুনফাছিল</li></ul></div>
+  <div class="panel" id="t4"><ul>
+    <li>মদ্দে লাযিম হরফী মুখাফ্‌ফাফ</li><li>মদ্দে লাযিম হরফী মুসাক্‌কাল</li><li>মদ্দে লাযিম কালমী মুসাক্‌কাল</li><li>মদ্দে লাযিম কালমী মুখাফ্‌ফাফ</li><li>মদ্দে মুত্তাসিল</li></ul></div>
+</section>
+
+<section id="tajweed" class="sec alt">
+  <h2>নূনে সাকিন ও তানবীন</h2>
+  <p class="sub">চার প্রকারে পড়া যায়। প্রতিটির হরফ দেখুন।</p>
+  <div id="rules" class="rules"></div>
+  <div class="qal">
+    <h3>কলকলার হরফ পাঁচটি</h3>
+    <p lang="ar" class="ar-big">ق ط ب ج د</p>
+    <p>এই পাঁচ হরফে জযম হলে কলকলা করে পড়তে হয়।</p>
+  </div>
+</section>
+
+<section id="sifat" class="sec">
+  <h2>সিফাতের পরিচয়</h2>
+  <div class="sif">
+    <article><h3>সিফাতে মুতাযাদ্দাহ্‌ ১০টি</h3><p lang="ar" class="ar-line">هَمْس · جَهْر · شِدَّة · رَخَاوَة · اِسْتِعْلَاء · اِسْتِفَال · اِطْبَاق · اِنْفِتَاح · اِذْلَاق · اِصْمَات</p></article>
+    <article><h3>সিফাতে গায়রে মুতাযাদ্দাহ্‌ ৭টি</h3><p lang="ar" class="ar-line">صَفِير · قَلْقَلَة · تَكْرَار · تَفَشِّي · اِسْتِطَالَة · اِنْحِرَاف · غُنَّة</p></article>
+    <article><h3>হামসের হরফ ১০টি</h3><p lang="ar" class="ar-big">ف ح ث ه ش خ ص س ك ت</p></article>
+    <article><h3>মুস্তালিয়ার হরফ ৭টি</h3><p lang="ar" class="ar-big">خ ص ض غ ط ق ظ</p></article>
+  </div>
+</section>
+
+<section id="surah" class="sec">
+  <h2>ছোট সূরা</h2>
+  <p class="sub">সূরা ফাতিহা থেকে সূরা নাস পর্যন্ত ১১টি সূরা, বাংলা অর্থসহ। সূরা বেছে নিন।</p>
+  <div id="surahTabs" class="filters"></div>
+  <article id="surahView" class="reader" aria-live="polite"></article>
+</section>
+
+<section id="hadith" class="sec alt">
+  <h2>হাদীস শরীফ</h2>
+  <p class="sub">হযরত মুহাম্মদ সাল্লাল্লাহু আলাইহি ওয়াসাল্লামের বাণী। বাংলা অর্থ দিয়ে খুঁজুন।</p>
+  <input id="hSearch" class="search" type="search" placeholder="হাদীস খুঁজুন, যেমন: নামায, ইলম, দু'আ" aria-label="হাদীস খুঁজুন">
+  <div id="hadithList" class="hlist"></div>
+</section>
+
+<section id="names" class="sec">
+  <h2>আসমায়ে হুসনা</h2>
+  <p class="sub">আল্লাহ তা'আলার ৯৯টি সুন্দর নাম ও বাংলা অর্থ। আর অন্য সিফাতী নামও দেখুন।</p>
+  <p class="verse" lang="ar">هُوَ اللَّهُ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ</p>
+  <p class="sub verse-bn">তিনিই আল্লাহ, তিনি ব্যতীত কোন উপাস্য (উপাসনার উপযুক্ত) নাই।</p>
+  <input id="nSearch" class="search" type="search" placeholder="নাম বা অর্থ খুঁজুন, যেমন: দয়ালু, ক্ষমা" aria-label="নাম খুঁজুন">
+  <div id="namesGrid" class="names"></div>
+  <h3 class="extra-h">এই ৯৯টি ছাড়া আরও কিছু সিফাতী নাম</h3>
+  <div id="namesExtra" class="names"></div>
+  <p class="note">এই নামসমূহ হেফজ করার অর্থ আল্লাহর গুণাবলী মুখস্থ করিয়া সেই গুণাবলীর প্রতিবিম্বও নিজের মাঝে ফুটাইয়া তোলা।</p>
+</section>
+
+<section id="book" class="sec alt">
+  <h2>বইয়ের পাতা</h2>
+  <p class="sub">নূরানী পদ্ধতিতে কুরআন শিক্ষা বইয়ের পাতাগুলো। ক্লিক করে বড় করুন।</p>
+  <div class="filters" id="filters"></div>
+  <div id="gallery" class="gallery"></div>
+</section>
+</main>
+
+<footer>
+  <p>নূরানী পদ্ধতিতে কুরআন শিক্ষা · বাংলা শিক্ষা ওয়েবসাইট</p>
+</footer>
+
+<div id="lb" class="lb" hidden>
+  <button class="lb-x" aria-label="বন্ধ করুন">✕</button>
+  <button class="lb-n prev" aria-label="আগের পাতা">‹</button>
+  <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button class="lb-n next" aria-label="পরের পাতা">›</button>
+</div>
+<div id="zoom" class="zoom" hidden><div id="zoomBody"></div></div>
+<script src="js/content.js"></script>
+<script src="js/names.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
